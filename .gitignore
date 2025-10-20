@@ -1,3 +1,7 @@
-node_modules/
-.cache/
-public/
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+/.quarto/
+_site

@@ -1,0 +1,81 @@
+project:
+  type: website
+  title: "wbg-geopov-repo"
+
+website:
+  navbar:
+    title: "Geospatial Poverty Solutions"
+    logo-href: http://geopov/
+    background: white
+    foreground: "#0071bc"
+    search: true
+    left:
+      - text: "Data"
+        menu:
+          - text: "Data"
+            href: "geopov_repo.qmd#data"
+          - text: "By theme"
+          - text: "People"
+            href: "data/people.qmd"
+          - text: "Planet"
+            href: "data/planet.qmd"
+          - text: "Prosperity"
+            href: "data/prosperity.qmd"
+          - text: "Curated datasets"
+          - text: "Geocoded GMD data"
+            href: "geopov_repo.qmd#geocoded-gmd-data"
+          - text: "Space2Stats"
+            href: "geopov_repo.qmd#space2stats-data"
+
+      - text: "Methods"
+        menu:
+          - text: "Methods"
+            href: "geopov_repo.qmd#methods-and-code"
+          - text: "By type"
+          - text: "Aggregate"
+            href: "method/aggregate.qmd"
+          - text: "Merge"
+            href: "method/merge.qmd"
+          - text: "Analyze"
+            href: "method/analyze.qmd"
+          - text: "Map"
+            href: "method/map.qmd"
+
+      - text: "Examples"
+        href: "geopov_repo.qmd#examples"
+      - text: "Request support"
+        href: "geopov_repo.qmd#request-support"
+      - text: "Contribute"
+        href: "geopov_repo.qmd#contribute"
+
+  page-footer:
+    background: "#000000"
+    foreground: "#808080"
+    right: "© 2025 The World Bank Group, All Rights Reserved."
+    left:
+      - text: IBRD
+        href: http://www.worldbank.org/en/who-we-are/ibrd
+      - text: IDA
+        href: http://www.worldbank.org/ida
+      - text: IFC
+        href: http://www.ifc.org/
+      - text: MIGA
+        href: http://www.miga.org/
+      - text: ICSID
+        href: http://icsid.worldbank.org/
+
+editor: visual
+code-fold: true
+format:
+  html:
+    page-layout: custom
+    title-block-banner: "#f6f6f6"
+    title-block-banner-color: "#333333"
+    theme: style.css
+#    template-partials:
+#      - title-block.html
+
+resources:
+  - fonts/*
+  - style.css
+

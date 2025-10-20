@@ -1,0 +1,403 @@
+/*-- scss:rules --*/
+/*@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese';
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}*/
+
+@font-face {
+  font-family: 'Andes';
+  src: url("./fonts/304244_1_0.eot");
+  src: url("./fonts/304244_1_0.woff2") format("woff2"), url("./fonts/304244_1_0.woff") format("woff"), url("./fonts/304244_1_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'AndesBold';
+  src: url("./fonts/304244_0_0.eot");
+  src: url("./fonts/304244_0_0.woff2") format("woff2"), url("./fonts/304244_0_0.woff") format("woff"), url("./fonts/304244_0_0.ttf") format("truetype");
+}
+
+.nav-link {
+  font-family: "Andes";
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.navbar-container.container-fluid {
+  max-width: 1192px;
+}
+
+.navbar ul.dropdown-menu {
+  background-color: #f6f6f6;
+  padding: 1em;
+}
+
+.navbar .dropdown-header {
+  font-family: Andes;
+  color: #333333;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 1em;
+}
+
+.dropdown-item {
+  color: #0071BC;
+}
+
+.quarto-title.column-body, .quarto-title-meta {
+  max-width: 1192px;
+  margin: auto;
+}
+
+.grid {
+  max-width: 1192px;
+  margin: auto;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.navbar-brand {
+  padding: 16px;
+}
+
+img.navbar-logo {
+  max-height: none;
+}
+
+svg.aa-SubmitIcon {
+  fill: #EC553A;
+}
+
+#quarto-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondary-links {
+  width: 100%;
+  background-color: #0071bc;
+  color: white;
+  padding-bottom: 12px;
+  margin-top: auto;
+  position: relative;
+  bottom: -1px;
+}
+
+.secondary-links-container {
+  max-width: 1160px;
+  margin: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.secondary-links-title h2 {
+  font-family: Andes;
+}
+
+.secondary-links ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.secondary-links ul li {
+  font-size: 16px;
+}
+
+.secondary-links ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.center-left-border {
+  border-left: 1px solid white;
+  padding-left: 1em;
+}
+
+footer {
+  background-color: #000000
+}
+
+.nav-footer {
+  max-width: 1160px;
+  margin: auto;
+}
+
+.nav-footer-left .nav-link {
+  font-family: AndesBold;
+}
+
+h2 {
+  border-bottom: none;
+}
+
+.wide {
+  max-width: 1160px;
+  margin: auto;
+}
+
+/* Main dropdown container */
+.dropdown-block {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    display: block;
+    position: relative; /* Added for positioning the dropdown content */
+}
+
+/* Shadow effect on hover */
+.dropdown-block:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Header of the dropdown */
+.dropdown-block .dropdown-header {
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1em;
+    list-style: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon styling */
+.dropdown-block .dropdown-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+/* Hide the default marker for details/summary */
+.dropdown-block .dropdown-header::-webkit-details-marker {
+    display: none;
+}
+
+/* Arrow icon styling */
+.dropdown-block .dropdown-header::before {
+    content: "▶ ";
+    display: inline-block;
+    transition: transform 0.3s;
+    margin-right: 8px;
+}
+
+/* Rotate arrow on hover */
+.dropdown-block:hover .dropdown-header::before {
+    transform: rotate(90deg);
+}
+
+/* Dropdown content styling and initial state (hidden) */
+.dropdown-block .dropdown-content {
+    padding: 0 20px 20px 20px;
+    animation: slideDown 0.3s;
+    display: none; /* Hide content by default */
+    position: absolute; /* Optional: for better layout control */
+    background: #fff; /* Optional: give it a background */
+    border-radius: 0 0 8px 8px; /* Optional: match container radius */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: add shadow */
+    width: 100%; /* Optional: match the width of the header */
+    z-index: 10; /* Optional: ensure it appears above other elements */
+}
+
+/* Show dropdown content on hover */
+.dropdown-block:hover .dropdown-content {
+    display: block;
+}
+
+/* Animation for the content appearing */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container for multiple blocks */
+.blocks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/*html {
+  font-family: "Open Sans", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #333333;
+  background-color: #ffffff;
+  margin: 0px;
+}
+
+:root {
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Andes", sans-serif;
+  color: #333333;
+  font-size: 2rem;
+  line-height: 2.375rem;
+}
+#title-block-header.quarto-title-block.default .quarto-title .title {
+  margin: 48px 0px 48px 0px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+h2 {
+  font-family: "Andes", sans-serif;
+  color: #333333;
+  margin: 0px 0px 16px 0px;
+  font-size: 2rem;
+  line-height: 2.375rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+figure h2 {
+  font-family: "Open Sans";
+  font-size: 22px;
+}
+
+h3 {
+  font-family: "Andes", sans-serif;
+  color: #333333;
+  margin: 0px 0px 16px 0px;
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+h4 {
+  font-family: "Andes", sans-serif;
+  color: #333333;
+  margin: 0px 0px 16px 0px;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
+h5 {
+  font-family: "Andes", sans-serif;
+  color: #333333;
+  margin: 0px 0px 16px 0px;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+}
+
+@media (min-width: 768px) {
+  h5 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+.h5 {
+  text-transform: uppercase;
+}
+
+h6 {
+  font-family: "Andes", sans-serif;
+  color: #333333;
+  margin: 0px 0px 16px 0px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.h6 {
+  font-family: 'AndesBold', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0px 0px 16px 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px 0px 10px 0px;
+  color: #333333;
+  border-bottom: none;
+}
+
+h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small {
+  color: #d4d4d4;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #333333;
+}
+
+h1 a:hover, h1 a:focus, h1 a:active, h2 a:hover, h2 a:focus, h2 a:active, h3 a:hover, h3 a:focus, h3 a:active, h4 a:hover, h4 a:focus, h4 a:active, h5 a:hover, h5 a:focus, h5 a:active, h6 a:hover, h6 a:focus, h6 a:active {
+  color: #333333;
+  text-decoration: underline;
+}
+
+div.lead p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+details.code-fold {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #0071bc;
+  padding: 8px 16px 8px 16px;
+  border: 1px solid #d8e7f5;
+  background-color: #fafcff;
+  border-radius: 0px;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  text-align: left;
+  box-shadow: inset 0 3px 0 #f0f7fe;
+}
+
+details>summary {
+  font-size: 0.8rem;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}*/
+
+

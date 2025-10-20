@@ -1,0 +1,184 @@
+---
+title: "Data and Methods"
+# date: 2025-02-20
+# date-format: long
+# author: John Doe
+---
+
+::::::::::: grid
+::: {.g-col-lg-2 .g-col-md-1 .g-col-sm-0 .g-col-0}
+:::
+
+:::::::: {.g-col-lg-8 .g-col-md-10 .g-col-sm-12 .g-col-12}
+::: lead
+A curated repository of spatial data & methods for distributional analysis
+:::
+
+## Data
+
+Quickly find, evaluate and access useful spatial data
+
+```{r include=FALSE}
+library(knitr)
+library(kableExtra)
+library(htmltools)
+
+create_dropdown_block <- function(title, data, block_color = "#3498db", image_path = NULL) {
+  table_html <- kable(data, format = "html", escape = FALSE) %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = FALSE) %>%
+    as.character()
+  title_html <- if (!is.null(image_path)) sprintf('<img src="%s" class="dropdown-icon" alt=""> %s', image_path, title) else title
+  HTML(sprintf('<div class="dropdown-block" style="border-left:4px solid %s;"><div class="dropdown-header">%s</div><div class="dropdown-content">%s</div></div>', block_color, title_html, table_html))
+}
+```
+
+```{r echo=FALSE, results='asis'}
+people <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
+planet <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
+prosperity <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
+
+tagList(
+  HTML('<div class="blocks-container">'),
+  create_dropdown_block("People", people, "#3498db", "https://cdn-icons-png.flaticon.com/512/4807/4807598.png"),
+  create_dropdown_block("Planet", planet, "#2ecc71", "https://cdn-icons-png.flaticon.com/512/9985/9985721.png"),
+  create_dropdown_block("Prosperity", prosperity, "#e74c3c", "https://cdn-icons-png.flaticon.com/512/10074/10074713.png"),
+  HTML('</div>')
+)
+```
+
+::: {.callout-note collapse="true"}
+### See full data catalog
+
+|           |               | |
+|-----------|---------------|-|
+| **Theme** | **Name**      | **Source(s)** | 
+| People    | Population    | |
+| People    | Urbanization  | |
+| Climate   | Heat and Cold | |
+:::
+
+#### Geocoded GMD data
+
+The GMD geocoding initiative adds standardized location information and spatial variables to harmonized household survey microdata in the World Bank Global Monitoring Database.
+
+::: {.callout-note collapse="true"}
+### List of geocoded GMD surveys
+
+|             |          |                 | | |
+|-------------|----------|-----------------|-|-|
+| **Country** | **Year** | **Survey name** | **Location type** | **Location level** |
+|             |          |                 | | |
+:::
+
+Stata and R code to [access](), [analyse]() and [use]() the GMD data are provided under methods.
+
+#### Space2Stats data
+
+The [Space2Stats](https://worldbank.github.io/DECAT_Space2Stats) program provides easier access to regularly requested geospatial aggregate data. The main output is a database of geospatial aggregates at two scales:
+
+-   Official World Bank boundaries at admin level 2
+-   H3 hexagons at level 6 (\~36km2)
+
+::: {.callout-note collapse="true"}
+### S2S catalog
+
+|           |               |
+|-----------|---------------|
+| **Theme** | **Name**      |
+| People    | Population    |
+| People    | Urbanization  |
+| Climate   | Heat and Cold |
+:::
+
+R and Python code to access the S2S data are provided on the [Space2Stats](https://worldbank.github.io/DECAT_Space2Stats) site.
+
+## Methods and code
+
+Methods and reproducible code to use and analyse spatial data
+
+```{r echo=FALSE, results='asis'}
+aggregate <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
+merge <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
+analyse <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
+map <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
+
+tagList(
+  HTML('<div class="blocks-container">'),
+  create_dropdown_block("Aggregate", aggregate, "#3498db", "https://cdn-icons-png.flaticon.com/512/9308/9308941.png"),
+  create_dropdown_block("Merge", merge, "#f39c12", "https://cdn-icons-png.flaticon.com/512/1673/1673899.png"),
+  create_dropdown_block("Analyse", analyse, "#e74c3c", "https://cdn-icons-png.flaticon.com/512/9850/9850778.png"),
+  create_dropdown_block("Map", map, "#9b59b6", "https://cdn-icons-png.flaticon.com/512/854/854878.png"),
+  HTML('</div>')
+)
+```
+
+::: {.callout-note collapse="true"}
+### See full methods catalog
+
+|           |                                          |
+|-----------|------------------------------------------|
+| **Type**  | **Name**                                 |
+| Aggregate | Zonal stats                              |
+| Merge     | Extracting spatial data at points        |
+| Map       | Mapping locations with geocoded GMD data |
+| Analyse   |                                          |
+:::
+
+## Examples
+
+A curated searchable list of spatial welfare analysis and studies
+
+```{r echo=FALSE, results='asis'}
+examples <- data.frame(Title = c(""), Authors = c(""), Summary = c(""), Data = c(""), Method = c(""), Reproducibility = c(""))
+
+tagList(
+  HTML('<div class="blocks-container">'),
+  create_dropdown_block("List of studies", examples, "#3498db"),
+  HTML('</div>')
+)
+```
+
+## Request support
+
+You can request support by filling out this form...
+
+## Contribute
+
+The easiest way to contribute to the repository or make a request is to [open an issue on Github](link):
+
+1.  Choose a template: `contribute data`, `contribute method`, `request data`, or `request method`
+2.  Fill out the template to provide all the information we need
+
+We use the information to check the data source, test the method, and create a new entry.
+::::::::
+
+::: {.g-col-lg-1 .g-col-md-1 .g-col-sm-0 .g-col-0}
+:::
+:::::::::::
+
+```{=html}
+<div class="secondary-links">
+  <div class="secondary-links-container">
+      <div class="secondary-links-title">
+        <h2>Useful Resources</h2>
+      </div>
+      <div class="grid">
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12">
+          <ul>
+            <li><a href="http://GeoPov/">Geospatial Poverty Solutions Home</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="https://pipmaps.worldbank.org/">Geospatial poverty portal</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="mailto:data@worldbank.org?Subject=WDI%20Website%20Query" target="_top">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+```

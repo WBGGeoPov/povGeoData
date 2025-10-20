@@ -1,0 +1,35 @@
+color:
+  palette:
+    white: "#ffffff"
+    dark-text: "#333333"
+    blue: "#337ab7"
+    nav-blue: "#0071bc"
+  background: white
+  foreground: dark-text
+  primary: blue
+
+logo:
+  medium: logos/geopov_logo.png
+
+typography:
+  fonts:
+    - family: Andes
+      source: file
+      files:
+        - path: fonts/304244_1_0.ttf
+    - family: AndesBold
+      source: file
+      files:
+        - path: fonts/304244_0_0.ttf
+    - family: Open Sans
+      source: google
+    - family: Source Code Pro
+      source: google
+  base: Open Sans
+  headings:
+    family: AndesBold
+  monospace:
+    family: Source Code Pro
+    size: 0.9em
+  link:
+    color: blue
