@@ -1,5 +1,4 @@
 ---
-title: "merge"
+title: "Methods and code: Merge spatial data"
 format: html
 ---
-

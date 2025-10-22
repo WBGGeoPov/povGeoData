@@ -1,5 +1,4 @@
 ---
-title: "map"
+title: "Methods and code: Maps"
 format: html
 ---
-

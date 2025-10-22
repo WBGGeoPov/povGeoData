@@ -18,6 +18,8 @@ A curated repository of spatial data & methods for distributional analysis
 
 Quickly find, evaluate and access useful spatial data
 
+<!-- Function for creating drop down tables -->
+
 ```{r include=FALSE}
 library(knitr)
 library(kableExtra)
@@ -32,8 +34,28 @@ create_dropdown_block <- function(title, data, block_color = "#3498db", image_pa
 }
 ```
 
+<!-- Function for creating qmd files for data from excel -->
+
+```{r include=FALSE}
+excel_path <- "~/Library/CloudStorage/OneDrive-WBG/WBG Geospatial Poverty Solutions - WB Group - General/02. Work Program/Pillar 2 - Knowledge and Data Center/Repository of data and methodology/GeoPov data and methods.xlsx"
+
+# Source the function definition
+    source("code/generate_data_qmd.R")
+
+# Execute the function
+  # This will create .qmd files in povGeoData/data/
+  create_qmd_from_excel(excel_path)
+```
+
+<!-- Create drop down tables with data by theme -->
+
 ```{r echo=FALSE, results='asis'}
-people <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
+
+excel_path <- "~/Library/CloudStorage/OneDrive-WBG/WBG Geospatial Poverty Solutions - WB Group - General/02. Work Program/Pillar 2 - Knowledge and Data Center/Repository of data and methodology/GeoPov data and methods.xlsx"
+data_list <- read_excel(excel_path, sheet = "data_prod")
+
+people <- data_list[grepl("People", data_list$theme),2:3]
+people$name <- paste0("<a href='data/", tolower(people$name), ".html'>", people$name, "</a>")
 planet <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
 prosperity <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
 
@@ -47,14 +69,30 @@ tagList(
 ```
 
 ::: {.callout-note collapse="true"}
-### See full data catalog
+### Data catalog
 
-|           |               | |
-|-----------|---------------|-|
-| **Theme** | **Name**      | **Source(s)** | 
-| People    | Population    | |
-| People    | Urbanization  | |
-| Climate   | Heat and Cold | |
+```{r}
+#| echo: false
+#| results: 'asis'
+library(readxl)
+library(DT)
+
+excel_path <- "~/Library/CloudStorage/OneDrive-WBG/WBG Geospatial Poverty Solutions - WB Group - General/02. Work Program/Pillar 2 - Knowledge and Data Center/Repository of data and methodology/GeoPov data and methods.xlsx"
+
+data_list <- read_excel(excel_path, sheet = "data_prod")[,1:3]
+data_list$name <- paste0("<a href='data/", tolower(data_list$name), ".html'>", data_list$name, "</a>")
+colnames(data_list) <- c("Theme(s)", "Name", "Source")
+
+DT::datatable(
+  data_list,
+  escape = FALSE, # Allow HTML in table cells
+  options = list(pageLength = 10),
+  filter = 'top',
+  class = 'cell-border stripe'
+)
+
+```
+
 :::
 
 #### Geocoded GMD data
@@ -64,10 +102,10 @@ The GMD geocoding initiative adds standardized location information and spatial 
 ::: {.callout-note collapse="true"}
 ### List of geocoded GMD surveys
 
-|             |          |                 | | |
-|-------------|----------|-----------------|-|-|
+|             |          |                 |                   |                    |
+|--------------|--------------|-----------------|--------------|--------------|
 | **Country** | **Year** | **Survey name** | **Location type** | **Location level** |
-|             |          |                 | | |
+|             |          |                 |                   |                    |
 :::
 
 Stata and R code to [access](), [analyse]() and [use]() the GMD data are provided under methods.
@@ -113,7 +151,7 @@ tagList(
 ```
 
 ::: {.callout-note collapse="true"}
-### See full methods catalog
+### Methods catalog
 
 |           |                                          |
 |-----------|------------------------------------------|

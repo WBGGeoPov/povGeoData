@@ -1,0 +1,108 @@
+---
+title: "Population"
+format: html
+---
+
+::::::: grid
+::: {.g-col-lg-2 .g-col-md-1 .g-col-sm-0 .g-col-0}
+:::
+
+:::: {.g-col-lg-8 .g-col-md-10 .g-col-sm-12 .g-col-12}
+
+**Source:** [GHSL - Global Human Settlement Layer](https://doi.org/10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE)
+
+**Version:** GHS-POP - R2023A V1
+
+**Keywords:** population, GHSL, GHS-POP
+
+**Type:** Raster
+
+**Description:** The dataset depicts the distribution of residential population, expressed as the number of people per cell. Residential population estimates between 1975 and 2020 in 5-year intervals and projections to 2025 and 2030 derived from CIESIN GPWv4.11 were disaggregated from census or administrative units to grid cells, informed by the distribution, volume, and classification of built-up as mapped in the Global Human Settlement Layer (GHSL) global layer per corresponding epoch.
+
+**Units:** Number of people
+
+**Available in geocoded GMD?** Yes
+
+**Available from Space2Stats?** No
+
+**Usage:** Spatial targeting of public services and social protection by revealing where populations are concentrated, improving equity in service provision. Ex ante and ex post impact assessments of infrastructure (roads, energy, digital) by measuring how many people are served or newly connected.Mapping distributional effects of shocks or policies across space. Urbanization and settlement system analysis, studies of agglomeration economies, labor market catchments, and regional disparities over time. Disaster risk and climate vulnerability assessments by quantifying exposed population to hazards.
+
+**Limitations:** Gridded population datasets can have large errors due to inaccurate or out of date input data/census and modeling assumptions. Errors are most problematic for analysis at a small local level and tend to be smaller when aggregating the population to larger areas. Limitations of GHS-POP include a tendency to underestimate population in densely populated urban areas and overestimate in sparsely populated rural areas. It can miss small informal settlements and is only available at 5-year intervals.
+
+**Examples:** World Bank Vision Indicator: Percentage of people at high risk from climate related hazards
+
+**Access:** GHS-POP data files are available for direct download [here](https://human-settlement.emergency.copernicus.eu/download.php?ds=pop). The gridded population data (.tif format) can be downloaded as a single global file or in smaller tiles covering a specific area - see the website. There is a separate file for each 5-year epoch, coordinate reference system and spatial resolution available. The code below shows how to download and open the data using R.
+
+::: panel-tabset
+
+## R
+
+```{r}
+#| echo: false
+#| output: asis
+cat("```r\n")
+cat(readLines("../code/ghs-pop.R"), sep = "\n")
+cat("\n```\n")
+```
+
+## Output
+```{r}
+#| echo: false
+source("../code/ghs-pop.R")
+```
+
+:::
+
+### Technical
+
+**Coordinate reference system:** World Mollweide (EPSG:54009) or WGS84 (EPSG:4326)
+
+**Spatial coverage/extent:** Global
+
+**Spatial resolution:** 100 m, 1 km, 3 arcsec or 30 arcsec
+
+**Temporal coverage:** 1975-2030
+
+**Temporal resolution:** 5-year intervals
+
+**License:** CC BY 4.0
+
+**Citation:** Schiavina M., Freire S., Carioli A., MacManus K. (2023):
+GHS-POP R2023A - GHS population grid multitemporal (1975-2030).European Commission, Joint Research Centre (JRC) PID: http://data.europa.eu/89h/2ff68a52-5b5b-4a22-8f40-c41da8332cfe, doi:10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE
+
+**Last updated:** 10/16/25
+
+::::
+
+::: {.g-col-lg-1 .g-col-md-1 .g-col-sm-0 .g-col-0}
+:::
+:::::::
+
+```{=html}
+<div class="secondary-links">
+  <div class="secondary-links-container">
+      <div class="secondary-links-title">
+        <h2>Useful Resources</h2>
+      </div>
+      <div class="grid">
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12">
+          <ul>
+            <li><a href="http://GeoPov/">Geospatial Poverty Solutions Home</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="https://pipmaps.worldbank.org/">Geospatial poverty portal</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="mailto:data@worldbank.org?Subject=WDI%20Website%20Query" target="_top">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+```
+
+

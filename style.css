@@ -61,6 +61,11 @@
   padding: 16px;
 }
 
+.panel-tabset .nav-link {
+  font-family: "Andes";
+  text-transform: none;
+}
+
 img.navbar-logo {
   max-height: none;
 }

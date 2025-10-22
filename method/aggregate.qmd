@@ -1,5 +1,4 @@
 ---
-title: "aggregate"
+title: "Methods and code: Aggregate spatial data"
 format: html
 ---
-

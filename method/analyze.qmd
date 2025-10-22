@@ -1,5 +1,4 @@
 ---
-title: "analyze"
+title: "Methods and code: Analyze spatial data"
 format: html
 ---
-

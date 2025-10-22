@@ -13,40 +13,40 @@ website:
       - text: "Data"
         menu:
           - text: "Data"
-            href: "geopov_repo.qmd#data"
+            href: geopov_repo.qmd#data
           - text: "By theme"
           - text: "People"
-            href: "data/people.qmd"
+            href: data/people.qmd
           - text: "Planet"
-            href: "data/planet.qmd"
+            href: data/planet.qmd
           - text: "Prosperity"
-            href: "data/prosperity.qmd"
+            href: data/prosperity.qmd
           - text: "Curated datasets"
           - text: "Geocoded GMD data"
-            href: "geopov_repo.qmd#geocoded-gmd-data"
+            href: geopov_repo.qmd#geocoded-gmd-data
           - text: "Space2Stats"
-            href: "geopov_repo.qmd#space2stats-data"
+            href: geopov_repo.qmd#space2stats-data
 
       - text: "Methods"
         menu:
           - text: "Methods"
-            href: "geopov_repo.qmd#methods-and-code"
+            href: geopov_repo.qmd#methods-and-code
           - text: "By type"
           - text: "Aggregate"
-            href: "method/aggregate.qmd"
+            href: method/aggregate.qmd
           - text: "Merge"
-            href: "method/merge.qmd"
+            href: method/merge.qmd
           - text: "Analyze"
-            href: "method/analyze.qmd"
+            href: method/analyze.qmd
           - text: "Map"
-            href: "method/map.qmd"
+            href: method/map.qmd
 
       - text: "Examples"
-        href: "geopov_repo.qmd#examples"
+        href: geopov_repo.qmd#examples
       - text: "Request support"
-        href: "geopov_repo.qmd#request-support"
+        href: geopov_repo.qmd#request-support
       - text: "Contribute"
-        href: "geopov_repo.qmd#contribute"
+        href: geopov_repo.qmd#contribute
 
   page-footer:
     background: "#000000"
