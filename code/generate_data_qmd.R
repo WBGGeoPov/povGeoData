@@ -146,7 +146,7 @@ source("<<reprex_path>>")
         </div>
         <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
           <ul>
-            <li><a href="mailto:data@worldbank.org?Subject=WDI%20Website%20Query" target="_top">Contact us</a></li>
+            <li><a href="mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository" target="_top">Contact us</a></li>
           </ul>
         </div>
       </div>

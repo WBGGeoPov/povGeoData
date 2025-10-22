@@ -1,5 +1,5 @@
 ---
-title: "Data and Methods"
+title: "GeoPov Data and Methods"
 # date: 2025-02-20
 # date-format: long
 # author: John Doe
@@ -10,13 +10,14 @@ title: "Data and Methods"
 :::
 
 :::::::: {.g-col-lg-8 .g-col-md-10 .g-col-sm-12 .g-col-12}
+
 ::: lead
-A curated repository of spatial data & methods for distributional analysis
+A curated repository of spatial data sources, methods & applications for distributional analysis by [Geospatial Poverty Solutions](http://geopov/)
 :::
 
-## Data
+## Data sources
 
-Quickly find, evaluate and access useful spatial data
+Quickly find, assess and learn how to access useful spatial indicators & data sources
 
 <!-- Function for creating drop down tables -->
 
@@ -64,6 +65,9 @@ tagList(
   create_dropdown_block("People", people, "#3498db", "https://cdn-icons-png.flaticon.com/512/4807/4807598.png"),
   create_dropdown_block("Planet", planet, "#2ecc71", "https://cdn-icons-png.flaticon.com/512/9985/9985721.png"),
   create_dropdown_block("Prosperity", prosperity, "#e74c3c", "https://cdn-icons-png.flaticon.com/512/10074/10074713.png"),
+  create_dropdown_block("Infrastructure", prosperity, "#9b59b6", "https://cdn-icons-png.flaticon.com/512/10074/10074713.png"),
+  create_dropdown_block("Digital", prosperity, "#f39c12", "https://cdn-icons-png.flaticon.com/512/10074/10074713.png"),
+  create_dropdown_block("Boundaries", prosperity, "grey", "https://cdn-icons-png.flaticon.com/512/10074/10074713.png"),
   HTML('</div>')
 )
 ```
@@ -92,33 +96,35 @@ DT::datatable(
 )
 
 ```
-
 :::
 
 #### Geocoded GMD data
 
-The GMD geocoding initiative adds standardized location information and spatial variables to harmonized household survey microdata in the World Bank Global Monitoring Database.
+Harmonized household survey microdata with location information and spatial variables
 
 ::: {.callout-note collapse="true"}
 ### List of geocoded GMD surveys
 
+* Stata and R code to access, analyze and use the GMD data are provided under methods.
+
 |             |          |                 |                   |                    |
-|--------------|--------------|-----------------|--------------|--------------|
+|---------------|---------------|---------------|---------------|---------------|
 | **Country** | **Year** | **Survey name** | **Location type** | **Location level** |
 |             |          |                 |                   |                    |
 :::
 
-Stata and R code to [access](), [analyse]() and [use]() the GMD data are provided under methods.
 
 #### Space2Stats data
 
-The [Space2Stats](https://worldbank.github.io/DECAT_Space2Stats) program provides easier access to regularly requested geospatial aggregate data. The main output is a database of geospatial aggregates at two scales:
+[Space2Stats](https://worldbank.github.io/DECAT_Space2Stats) provide regularly requested geospatial aggregates at two scales:
 
 -   Official World Bank boundaries at admin level 2
 -   H3 hexagons at level 6 (\~36km2)
 
 ::: {.callout-note collapse="true"}
 ### S2S catalog
+
+* R and Python code to access the S2S data are provided on the [Space2Stats](https://worldbank.github.io/DECAT_Space2Stats/readme.html#api) site.
 
 |           |               |
 |-----------|---------------|
@@ -128,24 +134,32 @@ The [Space2Stats](https://worldbank.github.io/DECAT_Space2Stats) program provide
 | Climate   | Heat and Cold |
 :::
 
-R and Python code to access the S2S data are provided on the [Space2Stats](https://worldbank.github.io/DECAT_Space2Stats) site.
+
 
 ## Methods and code
 
-Methods and reproducible code to use and analyse spatial data
+Methods and reproducible code to help you use and analyze spatial data
 
 ```{r echo=FALSE, results='asis'}
 aggregate <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
 merge <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
-analyse <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
 map <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
 
 tagList(
   HTML('<div class="blocks-container">'),
   create_dropdown_block("Aggregate", aggregate, "#3498db", "https://cdn-icons-png.flaticon.com/512/9308/9308941.png"),
-  create_dropdown_block("Merge", merge, "#f39c12", "https://cdn-icons-png.flaticon.com/512/1673/1673899.png"),
-  create_dropdown_block("Analyse", analyse, "#e74c3c", "https://cdn-icons-png.flaticon.com/512/9850/9850778.png"),
+  create_dropdown_block("Merge", merge, "#f39c12", "https://cdn-icons-png.flaticon.com/512/9850/9850778.png"),
   create_dropdown_block("Map", map, "#9b59b6", "https://cdn-icons-png.flaticon.com/512/854/854878.png"),
+  HTML('</div>')
+)
+```
+
+```{r echo=FALSE, results='asis'}
+analyze <- data.frame(Name = c("A", "B", "C"), Source = c("A", "B", "C"))
+
+tagList(
+  HTML('<div class="blocks-container">'),
+  create_dropdown_block("Analyze", analyze, "#e74c3c", "https://cdn-icons-png.flaticon.com/512/9850/9850778.png"),
   HTML('</div>')
 )
 ```
@@ -159,12 +173,12 @@ tagList(
 | Aggregate | Zonal stats                              |
 | Merge     | Extracting spatial data at points        |
 | Map       | Mapping locations with geocoded GMD data |
-| Analyse   |                                          |
+| Analyze   |                                          |
 :::
 
-## Examples
+## Applications
 
-A curated searchable list of spatial welfare analysis and studies
+A curated & searchable list of spatial welfare analysis studies
 
 ```{r echo=FALSE, results='asis'}
 examples <- data.frame(Title = c(""), Authors = c(""), Summary = c(""), Data = c(""), Method = c(""), Reproducibility = c(""))
@@ -176,18 +190,10 @@ tagList(
 )
 ```
 
-## Request support
-
-You can request support by filling out this form...
-
 ## Contribute
 
-The easiest way to contribute to the repository or make a request is to [open an issue on Github](link):
+To suggest data or methods [open an issue on Github](link) and fill out the template or [contact us](mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository).
 
-1.  Choose a template: `contribute data`, `contribute method`, `request data`, or `request method`
-2.  Fill out the template to provide all the information we need
-
-We use the information to check the data source, test the method, and create a new entry.
 ::::::::
 
 ::: {.g-col-lg-1 .g-col-md-1 .g-col-sm-0 .g-col-0}
@@ -213,7 +219,7 @@ We use the information to check the data source, test the method, and create a n
         </div>
         <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
           <ul>
-            <li><a href="mailto:data@worldbank.org?Subject=WDI%20Website%20Query" target="_top">Contact us</a></li>
+            <li><a href="mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository" target="_top">Contact us</a></li>
           </ul>
         </div>
       </div>

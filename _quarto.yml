@@ -1,10 +1,10 @@
 project:
   type: website
-  title: "wbg-geopov-repo"
+  title: "GeoPov - Data & Methods"
 
 website:
   navbar:
-    title: "Geospatial Poverty Solutions"
+    title: "Data and Methods"
     logo-href: http://geopov/
     background: white
     foreground: "#0071bc"
@@ -21,6 +21,12 @@ website:
             href: data/planet.qmd
           - text: "Prosperity"
             href: data/prosperity.qmd
+          - text: "Infrastructure"
+            href: data/prosperity.qmd
+          - text: "Digital"
+            href: data/prosperity.qmd
+          - text: "Boundaries"
+            href: data/prosperity.qmd
           - text: "Curated datasets"
           - text: "Geocoded GMD data"
             href: geopov_repo.qmd#geocoded-gmd-data
@@ -36,17 +42,17 @@ website:
             href: method/aggregate.qmd
           - text: "Merge"
             href: method/merge.qmd
-          - text: "Analyze"
-            href: method/analyze.qmd
           - text: "Map"
             href: method/map.qmd
+          - text: "Analyze"
+            href: method/analyze.qmd
 
-      - text: "Examples"
-        href: geopov_repo.qmd#examples
-      - text: "Request support"
-        href: geopov_repo.qmd#request-support
+      - text: "Applications"
+        href: geopov_repo.qmd#applications
       - text: "Contribute"
         href: geopov_repo.qmd#contribute
+      - text: "Contact us"
+        href: "mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository"
 
   page-footer:
     background: "#000000"

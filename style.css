@@ -58,7 +58,7 @@
 }
 
 .navbar-brand {
-  padding: 16px;
+  padding: 0px;
 }
 
 .panel-tabset .nav-link {
@@ -229,10 +229,12 @@ h2 {
 /* Container for multiple blocks */
 .blocks-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
     margin: 10px 0;
 }
+
+
 
 /*html {
   font-family: "Open Sans", sans-serif;
