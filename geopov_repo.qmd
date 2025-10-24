@@ -10,7 +10,6 @@ title: "GeoPov Data and Methods"
 :::
 
 :::::::: {.g-col-lg-8 .g-col-md-10 .g-col-sm-12 .g-col-12}
-
 ::: lead
 A curated repository of spatial data sources, methods & applications for distributional analysis by [Geospatial Poverty Solutions](http://geopov/)
 :::
@@ -105,14 +104,13 @@ Harmonized household survey microdata with location information and spatial vari
 ::: {.callout-note collapse="true"}
 ### List of geocoded GMD surveys
 
-* Stata and R code to access, analyze and use the GMD data are provided under methods.
+-   Stata and R code to access, analyze and use the GMD data are provided under methods.
 
 |             |          |                 |                   |                    |
-|---------------|---------------|---------------|---------------|---------------|
+|-------------|----------|-----------------|-------------------|--------------------|
 | **Country** | **Year** | **Survey name** | **Location type** | **Location level** |
 |             |          |                 |                   |                    |
 :::
-
 
 #### Space2Stats data
 
@@ -124,7 +122,7 @@ Harmonized household survey microdata with location information and spatial vari
 ::: {.callout-note collapse="true"}
 ### S2S catalog
 
-* R and Python code to access the S2S data are provided on the [Space2Stats](https://worldbank.github.io/DECAT_Space2Stats/readme.html#api) site.
+-   R and Python code to access the S2S data are provided on the [Space2Stats](https://worldbank.github.io/DECAT_Space2Stats/readme.html#api) site.
 
 |           |               |
 |-----------|---------------|
@@ -133,8 +131,6 @@ Harmonized household survey microdata with location information and spatial vari
 | People    | Urbanization  |
 | Climate   | Heat and Cold |
 :::
-
-
 
 ## Methods and code
 
@@ -193,7 +189,6 @@ tagList(
 ## Contribute
 
 To suggest data or methods [open an issue on Github](link) and fill out the template or [contact us](mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository).
-
 ::::::::
 
 ::: {.g-col-lg-1 .g-col-md-1 .g-col-sm-0 .g-col-0}
