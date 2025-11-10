@@ -8,41 +8,34 @@ format: html
 :::
 
 :::: {.g-col-lg-8 .g-col-md-10 .g-col-sm-12 .g-col-12}
+
+
 **Name:** Zonal stats
 
 **Keywords:** extract, summary stats, spatial aggregation
 
 **Type:** Aggregate
 
-**Description:** Zonal statistics aggregate spatially defined variables over some area. There are important choices to make when calculating zonal stats.
+**Description:** Zonal statistics aggregate spatially defined variables over some area. There are  important choices to make when calculating zonal stats. What function should be used to aggregate values across space (mean, median, max, min...)? How should edge cases be treated, where a grid cell is partially covered by the area of interest? Should values first be top or bottom coded to reduce noise, or should they be weighted by another spatial dataset, such as population? The best choice will often depend on your objective and the question being asked. Once these decisions are made, computing zonal stats is straightforward in R using the exactextractr package (or Python or GIS software). The code below demonstrates several different cases and can be modified to suit your requirements.
 
--   What function should be used to aggregate values across space (mean, median, max, min...)?
-
--   Should values be weighted by another spatial dataset, such as population?
-
--   How should edge cases be treated, where a grid cell is partially covered by the area of interest?
-
--   Should values be top or bottom coded first (to reduce noise)?
-
-The best choice will often depend on your objective and the question being asked. Once these decisions are made, computing zonal stats is straightforward in R using the exactextractr package (or Python or GIS software). The code below demonstrates several different cases and can be modified to suit your requirements.
-
-<small> **Usage:** To calculate summary statistics for a region…
+<small>
+**Usage:** Used in many contexts to calculate summary statistics for a region…
 
 **Limitations:** The interpretation of zonal statistics depends on the aggregation method and other choices..
 
 **Examples:** NA
 
-**Input:** Raster data from which to extract values and vector data (polygons). Optional weighting raster.
+**Input:** Raster from which to extract values and vector. Optional weighting raster.
 
-**Ouput:** Zonal statistics for each region defined by the vector data.
+**Ouput:** Zonal statistics for each area defined by the raster
 
 </small>
 
 **Reproducible code**
 
 ::: panel-tabset
-## R
 
+## R
 ```{r}
 #| echo: false
 #| output: asis
@@ -60,7 +53,6 @@ if (file.exists("../code/zonal-stats.R")) {
 ```
 
 ## Output
-
 ```{r}
 #| echo: false
 #| message: false
@@ -71,9 +63,12 @@ if (file.exists("../code/zonal-stats.R")) {
   print("None")
 }
 ```
+
+
 :::
 
 **Last updated:** 10/16/25
+
 ::::
 
 ::: {.g-col-lg-1 .g-col-md-1 .g-col-sm-0 .g-col-0}
@@ -105,3 +100,5 @@ if (file.exists("../code/zonal-stats.R")) {
     </div>
 </div>
 ```
+
+

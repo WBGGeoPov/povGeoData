@@ -5,7 +5,7 @@ project:
 website:
   navbar:
     title: "Data and Methods"
-    logo-href: http://geopov/
+    logo-href: index.qmd
     background: white
     foreground: "#0071bc"
     search: true
@@ -13,7 +13,7 @@ website:
       - text: "Data"
         menu:
           - text: "Data"
-            href: geopov_repo.qmd#data
+            href: index.qmd#data
           - text: "By theme"
           - text: "People"
             href: data/people.qmd
@@ -22,21 +22,21 @@ website:
           - text: "Prosperity"
             href: data/prosperity.qmd
           - text: "Infrastructure"
-            href: data/prosperity.qmd
+            href: data/infrastructure.qmd
           - text: "Digital"
-            href: data/prosperity.qmd
+            href: data/digital.qmd
           - text: "Boundaries"
-            href: data/prosperity.qmd
+            href: data/boundaries.qmd
           - text: "Curated datasets"
           - text: "Geocoded GMD data"
-            href: geopov_repo.qmd#geocoded-gmd-data
+            href: index.qmd#geocoded-gmd-data
           - text: "Space2Stats"
-            href: geopov_repo.qmd#space2stats-data
+            href: index.qmd#space2stats-data
 
       - text: "Methods"
         menu:
           - text: "Methods"
-            href: geopov_repo.qmd#methods-and-code
+            href: index.qmd#methods-and-code
           - text: "By type"
           - text: "Aggregate"
             href: methods/aggregate.qmd
@@ -48,9 +48,9 @@ website:
             href: methods/analyze.qmd
 
       - text: "Applications"
-        href: geopov_repo.qmd#applications
+        href: index.qmd#applications
       - text: "Contribute"
-        href: geopov_repo.qmd#contribute
+        href: index.qmd#contribute
       - text: "Contact us"
         href: "mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository"
 

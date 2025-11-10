@@ -69,7 +69,6 @@ GHS-SMOD R2023A - GHS settlement layers, application of the Degree of Urbanisati
 ::: {.g-col-lg-8 .g-col-lg-offset-2 .g-col-md-10 .g-col-md-offset-1 .g-col-sm-12 .g-col-12}
 
 
-
 <small>
 **Usage:** The Global Human Settlement Layer (GHSL) Degree of Urbanisation dataset can be used for international statistical comparison, urban planning, monitoring development goals, and spatial analysis. It classifies areas as cities, towns, or rural areas based on population density and size, making it useful for creating comparable urban statistics, analyzing access to services, and monitoring progress.
 

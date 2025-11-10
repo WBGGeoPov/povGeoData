@@ -93,7 +93,7 @@ names(weight_raster) <- "weight"
 zonal_stats_weighted <- exact_extract(
   x = value_raster,
   y = polygons_sf,
-  fun = c("mean", "weighted_mean" = "mean"), # Calculate both simple and weighted mean
+  fun = c("mean", "weighted_mean"), # Calculate both simple and weighted mean
   weights = weight_raster,
   append_cols = "id"
 )

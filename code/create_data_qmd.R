@@ -113,10 +113,11 @@ if (file.exists(map_path)){knitr::read_chunk(map_path)}
 :::
 :::
 
-::::::: grid
-::: {.g-col-lg-8 .g-col-lg-offset-2 .g-col-md-10 .g-col-md-offset-1 .g-col-sm-12 .g-col-12}
+:::::::::::: grid
+::: {.g-col-lg-2 .g-col-md-1 .g-col-sm-0 .g-col-0}
+:::
 
-
+::::::::: {.g-col-lg-8 .g-col-md-10 .g-col-sm-12 .g-col-12}
 
 <small>
 **Usage:** <<row_data$usage>>
@@ -158,8 +159,11 @@ if (file.exists("<<reprex_path>>")) {
 
 **Last updated:** <<format(as.Date(row_data$last_updated), "%m/%d/%y")>>
 
+:::::::::
+
+::: {.g-col-lg-1 .g-col-md-1 .g-col-sm-0 .g-col-0}
 :::
-:::::::
+::::::::::::
 
 ```{=html}
 <div class="secondary-links">

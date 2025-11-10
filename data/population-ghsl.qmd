@@ -67,7 +67,6 @@ GHS-POP R2023A - GHS population grid multitemporal (1975-2030).European Commissi
 ::: {.g-col-lg-8 .g-col-lg-offset-2 .g-col-md-10 .g-col-md-offset-1 .g-col-sm-12 .g-col-12}
 
 
-
 <small>
 **Usage:** Spatial targeting of public services and social protection by revealing where populations are concentrated, improving equity in service provision. Ex ante and ex post impact assessments of infrastructure (roads, energy, digital) by measuring how many people are served or newly connected.Mapping distributional effects of shocks or policies across space. Urbanization and settlement system analysis, studies of agglomeration economies, labor market catchments, and regional disparities over time. Disaster risk and climate vulnerability assessments by quantifying exposed population to hazards.
 

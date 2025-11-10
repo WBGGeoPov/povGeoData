@@ -35,13 +35,6 @@ methods_list <- read.csv("methods/methods_list.csv")
 
 ```
 
-```{r}
-#| echo: false
-#| eval: false
-# This chunk's sole purpose is to trigger Quarto's dependency detection
-library(leaflet)
-```
-
 <!-- Create drop down tables with data by theme -->
 
 ```{r echo=FALSE, results='asis'}
@@ -132,7 +125,7 @@ Harmonized household survey microdata with location information and spatial vari
 -   Stata and R code to access, analyze and use the GMD data are provided under methods.
 
 |             |          |                 |                   |                    |
-|-------------|----------|-----------------|-------------------|--------------------|
+|---------------|---------------|---------------|---------------|---------------|
 | **Country** | **Year** | **Survey name** | **Location type** | **Location level** |
 |             |          |                 |                   |                    |
 :::

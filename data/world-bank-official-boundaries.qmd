@@ -67,7 +67,6 @@ if (file.exists(map_path)){knitr::read_chunk(map_path)}
 ::: {.g-col-lg-8 .g-col-lg-offset-2 .g-col-md-10 .g-col-md-offset-1 .g-col-sm-12 .g-col-12}
 
 
-
 <small>
 **Usage:** If Bank staff use this data to create a map- print, web, presentations for an external audience (e.g. external web sites), etc., staff must receive legal clearance by submitting the finished map to the World Bank Cartography Unit.
 
