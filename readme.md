@@ -1,3 +1,3 @@
-# wdi-quarto-template
+# GeoPov Data & Methods
 
-A template for Quarto websites and html pages, (roughly) styled according to [wdi.worldbank.org](https://datatopics.worldbank.org/world-development-indicators/)
+Uses the wdi-quarto-template, (roughly) styled according to [wdi.worldbank.org](https://datatopics.worldbank.org/world-development-indicators/)

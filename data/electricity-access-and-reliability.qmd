@@ -1,0 +1,143 @@
+---
+title: "Electricity access and reliability"
+format: html
+---
+
+::: {.grid}
+::: {.g-col-6}
+
+**Name:** Electricity access and reliability
+
+**Source:** [HREA](https://hrea.isr.umich.edu)
+
+**Version:** 1.1000000000000001
+
+**Keywords:** energy, power, night lights
+
+**Type:** Raster
+
+**Description:** High Resolution Electricity Access (HREA) indicator data are derived from statistical processing of nightly satellite observations of the earth at night. HREA provides 4 variables measuring electricity access and reliability: Mean annual natural logged visible radiance (in nW/cm2/sr), Mean z-score (standardized residuals), Light score (transformation of mean z-score), Proportion of nights a settlement is brighter than uninhabited areas.
+
+**Units:** NA
+
+**Available in geocoded GMD?** NA
+
+**Available from Space2Stats?** NA
+
+:::
+::: {.g-col-6}
+
+**Map**
+
+```{r}
+#| include: false
+map_path <- paste0("../code/", "NA",".R")
+if (file.exists(map_path)){knitr::read_chunk(map_path)}
+```
+
+```{r}
+#| label: NA
+#| echo: false
+#| message: false
+#| warning: false
+```
+<small>
+<small>
+**Coordinate reference system:** WGS84 (EPSG:4326)
+
+**Spatial coverage:** 115 countries not fully electrified (2015)
+
+**Spatial resolution:** 1 arc second, 7.5 arc second
+
+**Temporal coverage:** 2013-2020
+
+**Temporal resolution:** annual
+
+**License:** CC BY 4.0
+
+**Citation:** Brian Min, Zachary P. O'Keeffe, Babatunde Abidoye, Kwawu Mensan Gaba, Trevor Monroe, Benjamin P. Stewart, Kim Baugh, Bruno Sánchez-Andrade Nuño, “Lost in the Dark: A Survey of Energy Poverty from Space,” Joule (2024), https://doi.org/10.1016/j.joule.2024.05.001.
+</small>
+</small>
+
+:::
+:::
+
+::::::: grid
+::: {.g-col-lg-8 .g-col-lg-offset-2 .g-col-md-10 .g-col-md-offset-1 .g-col-sm-12 .g-col-12}
+
+
+
+<small>
+**Usage:** NA
+
+**Limitations:** while they are calculated at the 15 arcsec level, they are provided at the higher resolution of the original settlement layer to represent the settlement distribution.
+
+**Examples:** NA
+
+**Access:** NA
+</small>
+
+::: panel-tabset
+
+## R
+```{r}
+#| echo: false
+#| output: asis
+if (file.exists("../code/NA")) {
+  cat("```r
+")
+  try(cat(readLines("../code/NA"), sep = "
+"))
+  cat("```
+")
+} else {
+  cat("No code
+")
+}
+```
+
+## Output
+```{r}
+#| echo: false
+#| results: hold
+if (file.exists("../code/NA")) {
+  try(source("../code/NA"))
+} else {
+  print("None")
+}
+```
+
+:::
+
+**Last updated:** 10/17/25
+
+:::
+:::::::
+
+```{=html}
+<div class="secondary-links">
+  <div class="secondary-links-container">
+      <div class="secondary-links-title">
+      </div>
+      <div class="grid">
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12">
+          <ul>
+            <li><a href="http://GeoPov/">Geospatial Poverty Solutions Home</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="https://pipmaps.worldbank.org/">Geospatial poverty portal</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository" target="_top">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+```
+
+

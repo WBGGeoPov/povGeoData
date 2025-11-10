@@ -143,7 +143,7 @@ h2 {
 
 /* Main dropdown container */
 .dropdown-block {
-    margin: 20px 0;
+    margin: 0 5px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background: #fff;
@@ -214,6 +214,24 @@ h2 {
     display: block;
 }
 
+/* Styling for the links inside the content area */
+.dropdown-block .dropdown-content .dropdown-item {
+    display: block; /* Make each link take up the full width */
+    padding: 8px 0;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-block .dropdown-content .dropdown-item:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+.dropdown-block .dropdown-content .dropdown-item:hover {
+    color: #007bff; /* Highlight color on hover */
+}
+
+
 /* Animation for the content appearing */
 @keyframes slideDown {
     from {
@@ -230,10 +248,10 @@ h2 {
 .blocks-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    row-gap: 5px;
+    column-gap: 10px;
     margin: 10px 0;
 }
-
 
 
 /*html {

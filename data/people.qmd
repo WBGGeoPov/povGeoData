@@ -1,5 +1,6 @@
 ---
-title: "Data by theme: People"
+title: "People"
 format: html
 ---
 
+# Data by theme - People

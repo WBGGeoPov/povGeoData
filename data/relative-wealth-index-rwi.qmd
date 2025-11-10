@@ -1,0 +1,143 @@
+---
+title: "Relative Wealth Index (RWI)"
+format: html
+---
+
+::: {.grid}
+::: {.g-col-6}
+
+**Name:** Relative Wealth Index (RWI)
+
+**Source:** [Meta](https://data.humdata.org/dataset/relative-wealth-index)
+
+**Version:** 44974
+
+**Keywords:** rwi, wealth index, poverty, assets, DHS
+
+**Type:** Raster
+
+**Description:** The Relative Wealth Index (RWI) measures the relative standard of living within a country at 2.4 km resolution. It ranks locations (2.4 km grid cells) on a country-specific scale. The RWI is produced for 135 low and middle income countries (2020) by applying machine learning algorithms to data from satellites, mobile phone networks, topographic maps, and de-identified connectivity data from Facebook. The model is trained using DHS wealth index estimates from 56 LMICs and validated using independent sources of household survey data from 18 countries. Confidence intervals are provided.
+
+**Units:** Dimensionless - a value of zero corresponds with the midpoint wealth over all grid cells within a country.
+
+**Available in geocoded GMD?** No
+
+**Available from Space2Stats?** No
+
+:::
+::: {.g-col-6}
+
+**Map**
+
+```{r}
+#| include: false
+map_path <- paste0("../code/", "NA",".R")
+if (file.exists(map_path)){knitr::read_chunk(map_path)}
+```
+
+```{r}
+#| label: NA
+#| echo: false
+#| message: false
+#| warning: false
+```
+<small>
+<small>
+**Coordinate reference system:** not defined
+
+**Spatial coverage:** 135 low and middle-income countries
+
+**Spatial resolution:** 2.4 km
+
+**Temporal coverage:** 2021-2023
+
+**Temporal resolution:** point in time
+
+**License:** CC BY-NC 4.0
+
+**Citation:** G. Chi, H. Fang, S. Chatterjee,  & J.E. Blumenstock,   Microestimates of wealth for all low- and middle-income countries, Proc. Natl. Acad. Sci. U.S.A. 119 (3) e2113658119, https://doi.org/10.1073/pnas.2113658119 (2022).
+</small>
+</small>
+
+:::
+:::
+
+::::::: grid
+::: {.g-col-lg-8 .g-col-lg-offset-2 .g-col-md-10 .g-col-md-offset-1 .g-col-sm-12 .g-col-12}
+
+
+
+<small>
+**Usage:** The RWI is a relative, asset-based proxy for welfare which can be useful for distinguishing richer versus poorer areas within low- and middle-income countries, especially where (survey) data is scarce. It has potential to inform targeting of social protection or other policies, especially when combined with other information such as call detail records ([Aiken et al. 2022](https://doi.org/10.1038/s41586-022-04484-9)). It should be complemented with survey-based consumption or poverty data for estimates of absolute poverty, monitored for temporal relevance, and applied with care where data coverage is limited.
+
+**Limitations:** RWI is an relative, asset-based proxy for welfare, not a direct prediction of income or consumption. Predictive performance drops when evaluated against consumption-based poverty measures (only ~32% of variation in per adult consumption across Togo cantons, and ~17% of variation in the probability of being poor in a rural Kenya microcensus). The RWI cannot easily be used to compare wealth across countries. Performance varies by country and context. Accuracy depends on the local alignment between survey-based wealth measurements and the predictors (satellite, connectivity) used by the model; results are not uniformly reliable across settings. Confidence intervals are provided with the RWI but interpretation is difficult and in practice they have not always been accounted for in subsequent analysis. Publicly available RWI layers are static products constructed from historical sources; without updates to the underlying inputs, they may not reflect changes in welfare over time and should not be assumed to hold in the future. Parts of the modeling rely on third-party sources (e.g., Meta connectivity data); availability, representativeness, or future continuity of such inputs can affect robustness and updatability.
+
+**Examples:** MENA paper, air pollution in Tiblisi, Machine learning and phone data can improve targeting of humanitarian aid
+
+**Access:** The RWI can be downloaded as country level CSV files from Humanitarian Data Exchange [here](https://data.humdata.org/dataset/relative-wealth-index). The CSV contains 5 columns: quadkey to identify each 2.4 km grid cell, latitude/longitude for the centre of each grid cell, the RWI value, and an error value quantifying uncertainty in the RWI value. The code below shows how to download and open the data as a spatially defined raster using R.
+</small>
+
+::: panel-tabset
+
+## R
+```{r}
+#| echo: false
+#| output: asis
+if (file.exists("../code/NA")) {
+  cat("```r
+")
+  try(cat(readLines("../code/NA"), sep = "
+"))
+  cat("```
+")
+} else {
+  cat("No code
+")
+}
+```
+
+## Output
+```{r}
+#| echo: false
+#| results: hold
+if (file.exists("../code/NA")) {
+  try(source("../code/NA"))
+} else {
+  print("None")
+}
+```
+
+:::
+
+**Last updated:** 10/17/25
+
+:::
+:::::::
+
+```{=html}
+<div class="secondary-links">
+  <div class="secondary-links-container">
+      <div class="secondary-links-title">
+      </div>
+      <div class="grid">
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12">
+          <ul>
+            <li><a href="http://GeoPov/">Geospatial Poverty Solutions Home</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="https://pipmaps.worldbank.org/">Geospatial poverty portal</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository" target="_top">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+```
+
+

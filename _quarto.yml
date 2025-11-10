@@ -39,13 +39,13 @@ website:
             href: geopov_repo.qmd#methods-and-code
           - text: "By type"
           - text: "Aggregate"
-            href: method/aggregate.qmd
+            href: methods/aggregate.qmd
           - text: "Merge"
-            href: method/merge.qmd
+            href: methods/merge.qmd
           - text: "Map"
-            href: method/map.qmd
+            href: methods/map.qmd
           - text: "Analyze"
-            href: method/analyze.qmd
+            href: methods/analyze.qmd
 
       - text: "Applications"
         href: geopov_repo.qmd#applications

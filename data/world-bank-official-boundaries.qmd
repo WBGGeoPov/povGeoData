@@ -1,0 +1,144 @@
+---
+title: "World Bank Official Boundaries"
+format: html
+---
+
+::: {.grid}
+::: {.g-col-6}
+
+**Name:** World Bank Official Boundaries
+
+**Source:** [World Bank](https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries)
+
+**Version:** 5
+
+**Keywords:** boundaries, regions, national, subnational, administrative, admin-1, admin-2
+
+**Type:** Vector
+
+**Description:** High resolution, World Bank-approved administrative boundaries. Each download option (shapefile, GeoPackage, or GeoJSON format) includes Admin 0, 1, 2, Non-Determined Legal Status Areas (NDLSA), and an ocean mask. An Admin 0 line file (for visualization purposes with World Bank-specific drawing instructions) can also be found in the shapefile folder. A data dictionary and additional columns of information which can be joined to the Admin 1 and 2 files are available as separate downloads.
+
+
+**Units:** NA
+
+**Available in geocoded GMD?** Yes
+
+**Available from Space2Stats?** Yes
+
+:::
+::: {.g-col-6}
+
+**Map**
+
+```{r}
+#| include: false
+map_path <- paste0("../code/", "NA",".R")
+if (file.exists(map_path)){knitr::read_chunk(map_path)}
+```
+
+```{r}
+#| label: NA
+#| echo: false
+#| message: false
+#| warning: false
+```
+<small>
+<small>
+**Coordinate reference system:** WGS84 (EPSG:4326)
+
+**Spatial coverage:** Global
+
+**Spatial resolution:** High resolution
+
+**Temporal coverage:** 2025
+
+**Temporal resolution:** 2025
+
+**License:** CC-BY 4.0
+
+**Citation:** World Bank. (2025). World Bank Official Boundaries. World Bank. https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries?version=5
+</small>
+</small>
+
+:::
+:::
+
+::::::: grid
+::: {.g-col-lg-8 .g-col-lg-offset-2 .g-col-md-10 .g-col-md-offset-1 .g-col-sm-12 .g-col-12}
+
+
+
+<small>
+**Usage:** If Bank staff use this data to create a map- print, web, presentations for an external audience (e.g. external web sites), etc., staff must receive legal clearance by submitting the finished map to the World Bank Cartography Unit.
+
+**Limitations:** To report an error in any of the admin boundary files, please raise a new issue here: https://github.com/worldbank/WB_GAD/issues and it will be considered during the next update cycle.
+
+**Examples:** NA
+
+**Access:** NA
+</small>
+
+::: panel-tabset
+
+## R
+```{r}
+#| echo: false
+#| output: asis
+if (file.exists("../code/NA")) {
+  cat("```r
+")
+  try(cat(readLines("../code/NA"), sep = "
+"))
+  cat("```
+")
+} else {
+  cat("No code
+")
+}
+```
+
+## Output
+```{r}
+#| echo: false
+#| results: hold
+if (file.exists("../code/NA")) {
+  try(source("../code/NA"))
+} else {
+  print("None")
+}
+```
+
+:::
+
+**Last updated:** 10/16/25
+
+:::
+:::::::
+
+```{=html}
+<div class="secondary-links">
+  <div class="secondary-links-container">
+      <div class="secondary-links-title">
+      </div>
+      <div class="grid">
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12">
+          <ul>
+            <li><a href="http://GeoPov/">Geospatial Poverty Solutions Home</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="https://pipmaps.worldbank.org/">Geospatial poverty portal</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository" target="_top">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+```
+
+

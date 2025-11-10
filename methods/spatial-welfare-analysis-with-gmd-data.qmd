@@ -1,0 +1,104 @@
+---
+title: "Spatial welfare analysis with GMD data"
+format: html
+---
+
+::::::: grid
+::: {.g-col-lg-2 .g-col-md-1 .g-col-sm-0 .g-col-0}
+:::
+
+:::: {.g-col-lg-8 .g-col-md-10 .g-col-sm-12 .g-col-12}
+
+
+**Name:** Spatial welfare analysis with GMD data
+
+**Keywords:** gmd, geovariables, household survey, geocoding
+
+**Type:** Analyze
+
+**Description:** Using geocoded GMD data, we can easily explore the relationship between household welfare and spatial correlates, such as weather, nightlights and accessibility. When data permits, we can also assess these correlations change over time and perform basic regressions with multiple covariates.
+
+<small>
+**Usage:** NA
+
+**Limitations:** NA
+
+**Examples:** NA
+
+**Input:** NA
+
+**Ouput:** NA
+
+</small>
+
+**Reproducible code**
+
+::: panel-tabset
+
+## R
+```{r}
+#| echo: false
+#| output: asis
+if (file.exists("../code/NA")) {
+  cat("```r
+")
+  try(cat(readLines("../code/NA"), sep = "
+"))
+  cat("```
+")
+} else {
+  cat("No code
+")
+}
+```
+
+## Output
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+if (file.exists("../code/NA")) {
+  try(source("../code/NA"))
+} else {
+  print("None")
+}
+```
+
+
+:::
+
+**Last updated:** 10/16/25
+
+::::
+
+::: {.g-col-lg-1 .g-col-md-1 .g-col-sm-0 .g-col-0}
+:::
+:::::::
+
+```{=html}
+<div class="secondary-links">
+  <div class="secondary-links-container">
+      <div class="secondary-links-title">
+      </div>
+      <div class="grid">
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12">
+          <ul>
+            <li><a href="http://GeoPov/">Geospatial Poverty Solutions Home</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="https://pipmaps.worldbank.org/">Geospatial poverty portal</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository" target="_top">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+```
+
+

@@ -1,13 +1,12 @@
 ---
-title: "Population"
+title: "Population (GHSL)"
 format: html
 ---
 
-::::::: grid
-::: {.g-col-lg-2 .g-col-md-1 .g-col-sm-0 .g-col-0}
-:::
+::: {.grid}
+::: {.g-col-6}
 
-:::: {.g-col-lg-8 .g-col-md-10 .g-col-sm-12 .g-col-12}
+**Name:** Population (GHSL)
 
 **Source:** [GHSL - Global Human Settlement Layer](https://doi.org/10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE)
 
@@ -25,39 +24,28 @@ format: html
 
 **Available from Space2Stats?** No
 
-**Usage:** Spatial targeting of public services and social protection by revealing where populations are concentrated, improving equity in service provision. Ex ante and ex post impact assessments of infrastructure (roads, energy, digital) by measuring how many people are served or newly connected.Mapping distributional effects of shocks or policies across space. Urbanization and settlement system analysis, studies of agglomeration economies, labor market catchments, and regional disparities over time. Disaster risk and climate vulnerability assessments by quantifying exposed population to hazards.
-
-**Limitations:** Gridded population datasets can have large errors due to inaccurate or out of date input data/census and modeling assumptions. Errors are most problematic for analysis at a small local level and tend to be smaller when aggregating the population to larger areas. Limitations of GHS-POP include a tendency to underestimate population in densely populated urban areas and overestimate in sparsely populated rural areas. It can miss small informal settlements and is only available at 5-year intervals.
-
-**Examples:** World Bank Vision Indicator: Percentage of people at high risk from climate related hazards
-
-**Access:** GHS-POP data files are available for direct download [here](https://human-settlement.emergency.copernicus.eu/download.php?ds=pop). The gridded population data (.tif format) can be downloaded as a single global file or in smaller tiles covering a specific area - see the website. There is a separate file for each 5-year epoch, coordinate reference system and spatial resolution available. The code below shows how to download and open the data using R.
-
-::: panel-tabset
-
-## R
-
-```{r}
-#| echo: false
-#| output: asis
-cat("```r\n")
-cat(readLines("../code/ghs-pop.R"), sep = "\n")
-cat("\n```\n")
-```
-
-## Output
-```{r}
-#| echo: false
-source("../code/ghs-pop.R")
-```
-
 :::
+::: {.g-col-6}
 
-### Technical
+**Map**
 
+```{r}
+#| include: false
+map_path <- paste0("../code/", "ghs-pop-map",".R")
+if (file.exists(map_path)){knitr::read_chunk(map_path)}
+```
+
+```{r}
+#| label: ghs-pop-map
+#| echo: false
+#| message: false
+#| warning: false
+```
+<small>
+<small>
 **Coordinate reference system:** World Mollweide (EPSG:54009) or WGS84 (EPSG:4326)
 
-**Spatial coverage/extent:** Global
+**Spatial coverage:** Global
 
 **Spatial resolution:** 100 m, 1 km, 3 arcsec or 30 arcsec
 
@@ -69,12 +57,61 @@ source("../code/ghs-pop.R")
 
 **Citation:** Schiavina M., Freire S., Carioli A., MacManus K. (2023):
 GHS-POP R2023A - GHS population grid multitemporal (1975-2030).European Commission, Joint Research Centre (JRC) PID: http://data.europa.eu/89h/2ff68a52-5b5b-4a22-8f40-c41da8332cfe, doi:10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE
+</small>
+</small>
+
+:::
+:::
+
+::::::: grid
+::: {.g-col-lg-8 .g-col-lg-offset-2 .g-col-md-10 .g-col-md-offset-1 .g-col-sm-12 .g-col-12}
+
+
+
+<small>
+**Usage:** Spatial targeting of public services and social protection by revealing where populations are concentrated, improving equity in service provision. Ex ante and ex post impact assessments of infrastructure (roads, energy, digital) by measuring how many people are served or newly connected.Mapping distributional effects of shocks or policies across space. Urbanization and settlement system analysis, studies of agglomeration economies, labor market catchments, and regional disparities over time. Disaster risk and climate vulnerability assessments by quantifying exposed population to hazards.
+
+**Limitations:** Gridded population datasets can have large errors due to inaccurate or out of date input data/census and modeling assumptions. Errors are most problematic for analysis at a small local level and tend to be smaller when aggregating the population to larger areas. Limitations of GHS-POP include a tendency to underestimate population in densely populated urban areas and overestimate in sparsely populated rural areas. It can miss small informal settlements and is only available at 5-year intervals.
+
+**Examples:** World Bank Vision Indicator: Percentage of people at high risk from climate related hazards
+
+**Access:** GHS-POP data files are available for direct download [here](https://human-settlement.emergency.copernicus.eu/download.php?ds=pop). The gridded population data (.tif format) can be downloaded as a single global file or in smaller tiles covering a specific area - see the website. There is a separate file for each 5-year epoch, coordinate reference system and spatial resolution available. The code below shows how to download and open the data using R.
+</small>
+
+::: panel-tabset
+
+## R
+```{r}
+#| echo: false
+#| output: asis
+if (file.exists("../code/ghs-pop.R")) {
+  cat("```r
+")
+  try(cat(readLines("../code/ghs-pop.R"), sep = "
+"))
+  cat("```
+")
+} else {
+  cat("No code
+")
+}
+```
+
+## Output
+```{r}
+#| echo: false
+#| results: hold
+if (file.exists("../code/ghs-pop.R")) {
+  try(source("../code/ghs-pop.R"))
+} else {
+  print("None")
+}
+```
+
+:::
 
 **Last updated:** 10/16/25
 
-::::
-
-::: {.g-col-lg-1 .g-col-md-1 .g-col-sm-0 .g-col-0}
 :::
 :::::::
 
@@ -82,7 +119,6 @@ GHS-POP R2023A - GHS population grid multitemporal (1975-2030).European Commissi
 <div class="secondary-links">
   <div class="secondary-links-container">
       <div class="secondary-links-title">
-        <h2>Useful Resources</h2>
       </div>
       <div class="grid">
         <div class="g-col-lg-4 g-col-md-4 g-col-sm-12">

@@ -1,0 +1,143 @@
+---
+title: "Population (WorldPop)"
+format: html
+---
+
+::: {.grid}
+::: {.g-col-6}
+
+**Name:** Population (WorldPop)
+
+**Source:** [WorldPop](https://hub.worldpop.org/project/categories?id=3)
+
+**Version:** Global2 R2025A V1
+
+**Keywords:** population, WorldPop
+
+**Type:** Raster
+
+**Description:** WorldPop’s 2015-2030 annual age and sex-structured population datasets are constructed through top-down disaggregation modelling of areal unit-linked population estimates derived from censuses and projections. They are available at 100m or 1km grid square scales, adjusted to match UN national population total estimates, and as per-grid cell totals, broken down by age/sex classes or as density estimates. The  disaggregation method is Random Forest-based dasymetric redistribution. Covariates used to construct the global datasets are available.
+
+**Units:** Number of people
+
+**Available in geocoded GMD?** No
+
+**Available from Space2Stats?** Yes
+
+:::
+::: {.g-col-6}
+
+**Map**
+
+```{r}
+#| include: false
+map_path <- paste0("../code/", "NA",".R")
+if (file.exists(map_path)){knitr::read_chunk(map_path)}
+```
+
+```{r}
+#| label: NA
+#| echo: false
+#| message: false
+#| warning: false
+```
+<small>
+<small>
+**Coordinate reference system:** WGS84 (EPSG:4326)
+
+**Spatial coverage:** Global
+
+**Spatial resolution:** 3 arcsec (country files), 30 arcsec (global mosaics)
+
+**Temporal coverage:** 2015-2030
+
+**Temporal resolution:** annual
+
+**License:** NA
+
+**Citation:** Bondarenko M., Priyatikanto R., Tejedor-Garavito N., Zhang W., McKeen T., Cunningham A., Woods T., Hilton J., Cihan D., Nosatiuk B., Brinkhoff T., Tatem A., Sorichetta A.. 2025. The spatial distribution of population in 2015-2030 at a resolution of 30 arc (approximately 1km at the equator) R2025A version v1. Global Demographic Data Project - Funded by The Bill and Melinda Gates Foundation (INV-045237). WorldPop - School of Geography and Environmental Science, University of Southampton. DOI:10.5258/SOTON/WP00845
+</small>
+</small>
+
+:::
+:::
+
+::::::: grid
+::: {.g-col-lg-8 .g-col-lg-offset-2 .g-col-md-10 .g-col-md-offset-1 .g-col-sm-12 .g-col-12}
+
+
+
+<small>
+**Usage:** See GHSL population use cases. The WorldPop Global2 dataset can be compared over regional or global scales and multiple time periods, or temporal trends in a specific country. WorldPop produces different types of gridded population count datasets - see [Choosing the right WorldPop population data for you](https://www.worldpop.org/choosing-the-right-worldpop-population-data-for-you/). If you are interested in recent small area population estimates for a specific country, [country-specific datasets](https://www.worldpop.org/choosing-the-right-worldpop-population-data-for-you/#individual) are likely to be the most accurate and relevant. These are often constructed in partnership with governments and UN agencies for a recent time-point and use input datasets and modelling methods that are typically bespoke for the focus country. WorldPop also provide small area estimates of other population characteristics and development indicators for specific countries.
+
+**Limitations:** See also limitations for GHSL population data. The "top-down" modeling  approach can mask true subnational variability, and projection uncertainty increases the further in time the data is from the census year. Sudden events like conflicts, natural disasters, and rapid urbanization can also lead to inaccuracies that are difficult to capture in a static model.
+
+**Examples:** See GHSL population data.
+
+**Access:** NA
+</small>
+
+::: panel-tabset
+
+## R
+```{r}
+#| echo: false
+#| output: asis
+if (file.exists("../code/NA")) {
+  cat("```r
+")
+  try(cat(readLines("../code/NA"), sep = "
+"))
+  cat("```
+")
+} else {
+  cat("No code
+")
+}
+```
+
+## Output
+```{r}
+#| echo: false
+#| results: hold
+if (file.exists("../code/NA")) {
+  try(source("../code/NA"))
+} else {
+  print("None")
+}
+```
+
+:::
+
+**Last updated:** 10/16/25
+
+:::
+:::::::
+
+```{=html}
+<div class="secondary-links">
+  <div class="secondary-links-container">
+      <div class="secondary-links-title">
+      </div>
+      <div class="grid">
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12">
+          <ul>
+            <li><a href="http://GeoPov/">Geospatial Poverty Solutions Home</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="https://pipmaps.worldbank.org/">Geospatial poverty portal</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository" target="_top">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+```
+
+

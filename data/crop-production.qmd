@@ -1,0 +1,143 @@
+---
+title: "Crop production"
+format: html
+---
+
+::: {.grid}
+::: {.g-col-6}
+
+**Name:** Crop production
+
+**Source:** [SPAM 2020](https://www.mapspam.info/data/)
+
+**Version:** 2020 v2.0
+
+**Keywords:** agriculture
+
+**Type:** Raster
+
+**Description:** The FAO SPAM dataset estimates the physical area, harvest area, production and yield, for each of the 46 (SPAM 2020) crops, split by rainfed and irrigated production system, as well as the total combination of both, at a resolution of 10km globally.
+
+**Units:** NA
+
+**Available in geocoded GMD?** NA
+
+**Available from Space2Stats?** NA
+
+:::
+::: {.g-col-6}
+
+**Map**
+
+```{r}
+#| include: false
+map_path <- paste0("../code/", "NA",".R")
+if (file.exists(map_path)){knitr::read_chunk(map_path)}
+```
+
+```{r}
+#| label: NA
+#| echo: false
+#| message: false
+#| warning: false
+```
+<small>
+<small>
+**Coordinate reference system:** WGS84 (EPSG:4326)
+
+**Spatial coverage:** Global
+
+**Spatial resolution:** 5 arcmin (~10 km)
+
+**Temporal coverage:** 2020
+
+**Temporal resolution:** Annual
+
+**License:** CC BY 4.0
+
+**Citation:** International Food Policy Research Institute (IFPRI), 2024, "Global Spatially-Disaggregated Crop Production Statistics Data for 2020 Version 2.0", https://doi.org/10.7910/DVN/SWPENT, Harvard Dataverse, V4
+</small>
+</small>
+
+:::
+:::
+
+::::::: grid
+::: {.g-col-lg-8 .g-col-lg-offset-2 .g-col-md-10 .g-col-md-offset-1 .g-col-sm-12 .g-col-12}
+
+
+
+<small>
+**Usage:** NA
+
+**Limitations:** These estimates are primarily intended to aid in large-scale studies. Annual and coarse-resolution averages correspond to a simple mean of within-grid values. Gridded datasets are provided to allow users to agglomerate data as best meets their particular needs. High-resolution (0.01° × 0.01°) datasets are gridded at the finest resolution of the information sources that were incorporated but are unlikely to fully resolve PM2.5 gradients at the gridded resolution due to influence by information sources at coarser resolution.
+
+**Examples:** NA
+
+**Access:** NA
+</small>
+
+::: panel-tabset
+
+## R
+```{r}
+#| echo: false
+#| output: asis
+if (file.exists("../code/NA")) {
+  cat("```r
+")
+  try(cat(readLines("../code/NA"), sep = "
+"))
+  cat("```
+")
+} else {
+  cat("No code
+")
+}
+```
+
+## Output
+```{r}
+#| echo: false
+#| results: hold
+if (file.exists("../code/NA")) {
+  try(source("../code/NA"))
+} else {
+  print("None")
+}
+```
+
+:::
+
+**Last updated:** 10/17/25
+
+:::
+:::::::
+
+```{=html}
+<div class="secondary-links">
+  <div class="secondary-links-container">
+      <div class="secondary-links-title">
+      </div>
+      <div class="grid">
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12">
+          <ul>
+            <li><a href="http://GeoPov/">Geospatial Poverty Solutions Home</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="https://pipmaps.worldbank.org/">Geospatial poverty portal</a></li>
+          </ul>
+        </div>
+        <div class="g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border">
+          <ul>
+            <li><a href="mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository" target="_top">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+```
+
+
