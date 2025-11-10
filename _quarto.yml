@@ -1,10 +1,10 @@
 project:
   type: website
-  title: "GeoPov - Data & Methods"
+  title: "GeoPov - "
 
 website:
   navbar:
-    title: "Data and Methods"
+    title: "Data & Methods"
     logo-href: index.qmd
     background: white
     foreground: "#0071bc"
