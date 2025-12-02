@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html#data",
+    "href": "index.html#data",
+    "title": "GeoPov Data and Methods",
+    "section": "Data",
+    "text": "Data\nQuickly find, assess and learn how to access useful spatial indicators & data sources\n\n\n\n\n\n\nPeople\n\n\nPopulation (GHSL)\nPopulation (WorldPop)\nDegree of Urbanisation\nUrban centres\nTravel time\nConflict events\n\n\n\n\n\nPlanet\n\n\nBuilt up area\nCrop production\nLand cover\nLand cover\nLandslide risk\nEarthquake risk\nGHG emissions\nDrought risk\nHeat and cold\nWet and dry\nDrought\nAir pollution (PM2.5)\nFlood risk\nTropical storm risk\nSea level rise\n\n\n\n\n\nProsperity\n\n\nCrop production\nElectricity access and reliability\nNighttime lights\nTravel time\nGDP\nGDP\nSectoral GDP\nInternational Wealth Index (IWI)\nRelative Wealth Index (RWI)\nGHG emissions\n\n\n\n\n\nInfrastructure\n\n\nBuilt up area\nElectricity access and reliability\nNighttime lights\nTravel time\nBuildings\nRoads\nMobile network\n\n\n\n\n\nDigital\n\n\n\n\n\n\nBoundaries\n\n\nWorld Bank Official Boundaries\nWorld Bank Subnational Poverty and Inequality Boundaries\n\n\n\n\n\n\n\n\n\nData catalog\n\n\n\n\n\n\n\n\n\n\n\nGeocoded GMD\nHarmonized household survey microdata with location information and spatial variables\n\n\n\n\n\n\nList of geocoded GMD surveys\n\n\n\n\n\n\nStata and R code to access, analyze and use the GMD data are provided under methods.\n\n\n\n\n\n\n\n\n\n\n\nCountry\nYear\nSurvey name\nLocation type\nLocation level\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSpace2Stats\nSpace2Stats provide regularly requested geospatial aggregates at two scales:\n\nOfficial World Bank boundaries at admin level 2\nH3 hexagons at level 6 (~36km2)\n\n\n\n\n\n\n\nS2S catalog\n\n\n\n\n\n\nR and Python code to access the S2S data are provided on the Space2Stats site.\n\n\n\n\nTheme\nName\n\n\nPeople\nPopulation\n\n\nPeople\nUrbanization\n\n\nClimate\nHeat and Cold"
+  },
+  {
+    "objectID": "index.html#methods-and-code",
+    "href": "index.html#methods-and-code",
+    "title": "GeoPov Data and Methods",
+    "section": "Methods and code",
+    "text": "Methods and code\nMethods and reproducible code to help you use spatial data for distributional analysis\n\n\n\n\nAggregate\n\n\nZonal stats\n\n\n\n\n\nMerge\n\n\nMerging geocoded GMD data with spatial data\nExtracting  values from spatial data at points\nChanging the coordinate reference system\nOverlaying gridded spatial data\nSpatial joins\n\n\n\n\n\nMap\n\n\nMapping interview locations with GMD data\n\n\n\n\n\n\n\nAnalyze\n\n\nAccessing geocoded GMD data\nSpatial welfare analysis with GMD data\nPrediction-powered inference (PPI) - regressions with satellite data\n\n\n\n\n\n\n\n\n\nMethods catalog"
+  },
+  {
+    "objectID": "index.html#applications",
+    "href": "index.html#applications",
+    "title": "GeoPov Data and Methods",
+    "section": "Applications",
+    "text": "Applications\nA curated & searchable list of spatial welfare analysis studies\n\n\n\n\n\n\nStudies"
+  },
+  {
+    "objectID": "index.html#contribute",
+    "href": "index.html#contribute",
+    "title": "GeoPov Data and Methods",
+    "section": "Contribute",
+    "text": "Contribute\nTo suggest data or methods open an issue on Github and fill out the template or contact us."
+  }
+]

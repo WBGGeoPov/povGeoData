@@ -1,0 +1,15 @@
+{
+  "hash": "55192f74395dc10b26fe224fb36f8dc1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Roads\"\nformat: html\n---\n\n::: {.grid}\n::: {.g-col-6}\n\n**Name:** Roads\n\n**Source:** [Overture Maps Foundation / OSM](https://docs.overturemaps.org/guides/transportation)\n\n**Version:** 2025-09-24.0 (regular updates)\n\n**Keywords:** transport, road network, accessibility\n\n**Type:** Vector\n\n**Description:** NA\n\n**Units:** NA\n\n**Available in geocoded GMD?** NA\n\n**Available from Space2Stats?** NA\n\n:::\n::: {.g-col-6}\n\n**Map**\n\n\n\n\n::: {.cell}\n\n:::\n\n<small>\n<small>\n**Coordinate reference system:** NA\n\n**Spatial coverage:** NA\n\n**Spatial resolution:** NA\n\n**Temporal coverage:** NA\n\n**Temporal resolution:** NA\n\n**License:** ODbL\n\n**Citation:** NA\n</small>\n</small>\n\n:::\n:::\n\n::::::: grid\n::: {.g-col-lg-8 .g-col-lg-offset-2 .g-col-md-10 .g-col-md-offset-1 .g-col-sm-12 .g-col-12}\n\n\n<small>\n**Usage:** NA\n\n**Limitations:** NA\n\n**Examples:** NA\n\n**Access:** NA\n</small>\n\n::: panel-tabset\n\n## R\nNo code\n\n## Output\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"None\"\n```\n\n\n:::\n:::\n\n\n:::\n\n**Last updated:** NA\n\n:::\n:::::::\n\n```{=html}\n<div class=\"secondary-links\">\n  <div class=\"secondary-links-container\">\n      <div class=\"secondary-links-title\">\n      </div>\n      <div class=\"grid\">\n        <div class=\"g-col-lg-4 g-col-md-4 g-col-sm-12\">\n          <ul>\n            <li><a href=\"http://GeoPov/\">Geospatial Poverty Solutions Home</a></li>\n          </ul>\n        </div>\n        <div class=\"g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border\">\n          <ul>\n            <li><a href=\"https://pipmaps.worldbank.org/\">Geospatial poverty portal</a></li>\n          </ul>\n        </div>\n        <div class=\"g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border\">\n          <ul>\n            <li><a href=\"mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository\" target=\"_top\">Contact us</a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n</div>\n```\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

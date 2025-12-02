@@ -1,0 +1,15 @@
+{
+  "hash": "15a1bf500b73a11035ce41aed55f3b11",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Merging geocoded GMD data with spatial data\"\nformat: html\n---\n\n::::::: grid\n::: {.g-col-lg-2 .g-col-md-1 .g-col-sm-0 .g-col-0}\n:::\n\n:::: {.g-col-lg-8 .g-col-md-10 .g-col-sm-12 .g-col-12}\n\n\n**Name:** Merging geocoded GMD data with spatial data\n\n**Keywords:** gmd, geovariables, household survey, geocoding, merging\n\n**Type:** Merge\n\n**Description:** The H3 hexagon grid used to geocode GMD surveys can be used as a key to join the harmonized microdata with any other spatial dataset. The spatial join can be performed in different ways, depending on the objective and type of spatial data (raster or vector). The code below shows several examples.\n\n<small>\n**Usage:** NA\n\n**Limitations:** NA\n\n**Examples:** NA\n\n**Input:** NA\n\n**Ouput:** NA\n\n</small>\n\n**Reproducible code**\n\n::: panel-tabset\n\n## R\nNo code\n\n## Output\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"None\"\n```\n\n\n:::\n:::\n\n\n\n:::\n\n**Last updated:** NA\n\n::::\n\n::: {.g-col-lg-1 .g-col-md-1 .g-col-sm-0 .g-col-0}\n:::\n:::::::\n\n```{=html}\n<div class=\"secondary-links\">\n  <div class=\"secondary-links-container\">\n      <div class=\"secondary-links-title\">\n      </div>\n      <div class=\"grid\">\n        <div class=\"g-col-lg-4 g-col-md-4 g-col-sm-12\">\n          <ul>\n            <li><a href=\"http://GeoPov/\">Geospatial Poverty Solutions Home</a></li>\n          </ul>\n        </div>\n        <div class=\"g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border\">\n          <ul>\n            <li><a href=\"https://pipmaps.worldbank.org/\">Geospatial poverty portal</a></li>\n          </ul>\n        </div>\n        <div class=\"g-col-lg-4 g-col-md-4 g-col-sm-12 center-left-border\">\n          <ul>\n            <li><a href=\"mailto:bbrunckhorst@worldbank.org?subject=GeoPov%20data%20and%20methods%20repository\" target=\"_top\">Contact us</a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n</div>\n```\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
